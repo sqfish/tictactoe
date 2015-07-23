@@ -19,6 +19,64 @@ $('td').click(function () {
   this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
 });
 
+$('button').click(function() {
+	checkWin();
+})
+
+
+function checkWin() {
+  switch (true) {
+  	case ($cell1.hasClass('red') && $cell2.hasClass('red') && $cell3.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell4.hasClass('red') && $cell5.hasClass('red') && $cell6.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell7.hasClass('red') && $cell8.hasClass('red') && $cell9.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell1.hasClass('red') && $cell5.hasClass('red') && $cell9.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell3.hasClass('red') && $cell5.hasClass('red') && $cell7.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell1.hasClass('red') && $cell4.hasClass('red') && $cell7.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell3.hasClass('red') && $cell6.hasClass('red') && $cell9.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell2.hasClass('red') && $cell5.hasClass('red') && $cell8.hasClass('red')):
+	  alert("WINNER!");
+      break;
+    case ($cell1.hasClass('blue') && $cell2.hasClass('blue') && $cell3.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell4.hasClass('blue') && $cell5.hasClass('blue') && $cell6.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell7.hasClass('blue') && $cell8.hasClass('blue') && $cell9.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell1.hasClass('blue') && $cell5.hasClass('blue') && $cell9.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell3.hasClass('blue') && $cell5.hasClass('blue') && $cell7.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell1.hasClass('blue') && $cell4.hasClass('blue') && $cell7.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell3.hasClass('blue') && $cell6.hasClass('blue') && $cell9.hasClass('blue')):
+	  alert("WINNER!");
+      break;
+    case ($cell2.hasClass('blue') && $cell5.hasClass('blue') && $cell8.hasClass('blue')):
+	  alert("WINNER!");
+      break;  
+  }
+}
+
 
 
 
