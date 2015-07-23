@@ -1,0 +1,18 @@
+td {
+	height: 100px;
+	width: 100px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blank {
+  background-color: white;
+}
