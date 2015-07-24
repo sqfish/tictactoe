@@ -20,22 +20,28 @@ $('td').click(function () {
   $(this).on("mouseout", checkWin);
 });
 
-// $('button').click(function() {
-//   checkWin();
-// })
 
-function checkColor(color, x, y) {
+
+function checkColor(color, col, row, diag1, diag2) {
   var rowCounter = 0;
   var colCounter = 0;
+  var diagCount1 = 0;
+  var diagCount2 = 0;
     for(var j = 0; j < 3; j++){
-      if (x[j].className == color){
+      if (col[j].className == color){
         rowCounter++;
       }
-      if (y[j].className == color) {
+      if (row[j].className == color) {
         colCounter++;
       }  
+      if (diag1[j].className == color) {
+        diagCount1++;
+      }
+      if (diag2[j].className == color) {
+        diagCount2++;
+      } 
     };
-    if (colCounter === 3 || rowCounter===3) {
+    if (colCounter === 3 || rowCounter === 3 || diagCount1 === 3 || diagCount2 === 3) {
       return true;
     } else {
       return false;
@@ -44,19 +50,21 @@ function checkColor(color, x, y) {
 
 
 function checkWin() {
-  var $cols = $("tbody td");
+  var $columns = $("tbody td");
   var $rows = $("tbody tr");
+  var diag1 = [$columns[0], $columns[4], $columns[8]];
+  var diag2 = [$columns[2], $columns[4], $columns[6]];
   for(var i = 1; i < 4; i++) {
-    var $x = $cols.nthCol(i).toArray();
-    var $y = $rows[i-1].children;
+    var $col = $columns.nthCol(i).toArray();
+    var $row = $rows[i-1].children;
     
-    if(checkColor("red", $x, $y)) {
+    if(checkColor("red", $col, $row, diag1, diag2)) {
       $("#result").text("red wins")
       // document.write("red wins")
       return;
     }
     
-    if(checkColor("blue", $x, $y)) {
+    if(checkColor("blue", $col, $row, diag1, diag2)) {
       $("#result").text("blue wins")
       return;
     }
@@ -64,6 +72,12 @@ function checkWin() {
     $("#result").text("no winner yet")
     return;
 };
+
+
+
+// $('button').click(function() {
+//   checkWin();
+// })
 
 
 
