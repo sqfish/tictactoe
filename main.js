@@ -31,8 +31,6 @@ function checkColor(color, col, row, diag1, diag2) {
       return false;
     }
 }
-
-
 function checkWin() {
   var $columns = $("tbody td");
   var $rows = $("tbody tr");
@@ -43,105 +41,23 @@ function checkWin() {
     var $row = $rows[i-1].children;
     
     if(checkColor("red", $col, $row, diag1, diag2)) {
-      $("#result").text("red wins")
-      // document.write("red wins")
+      $("#result").text("Otter Wins!");
       return;
     }
     
     if(checkColor("blue", $col, $row, diag1, diag2)) {
-      $("#result").text("blue wins")
+      $("#result").text("Pug Wins!");
       return;
     }
   }
-    $("#result").text("no winner yet")
-    return;
+      $("#result").text("No Winner Yet");
+      return;
 };
 
 
 
-// $('button').click(function() {
-//   checkWin();
-// })
+$('button').click(function() {
+  alert('You can do it!!!');  
+});
 
 
-
-// function checkWin() {
-//   switch (true) {
-//     case ($cell1.hasClass('red') && $cell2.hasClass('red') && $cell3.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell4.hasClass('red') && $cell5.hasClass('red') && $cell6.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell7.hasClass('red') && $cell8.hasClass('red') && $cell9.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell1.hasClass('red') && $cell5.hasClass('red') && $cell9.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell3.hasClass('red') && $cell5.hasClass('red') && $cell7.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell1.hasClass('red') && $cell4.hasClass('red') && $cell7.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell3.hasClass('red') && $cell6.hasClass('red') && $cell9.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell2.hasClass('red') && $cell5.hasClass('red') && $cell8.hasClass('red')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell1.hasClass('blue') && $cell2.hasClass('blue') && $cell3.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell4.hasClass('blue') && $cell5.hasClass('blue') && $cell6.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell7.hasClass('blue') && $cell8.hasClass('blue') && $cell9.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell1.hasClass('blue') && $cell5.hasClass('blue') && $cell9.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell3.hasClass('blue') && $cell5.hasClass('blue') && $cell7.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell1.hasClass('blue') && $cell4.hasClass('blue') && $cell7.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell3.hasClass('blue') && $cell6.hasClass('blue') && $cell9.hasClass('blue')):
-//     alert("WINNER!");
-//       break;
-//     case ($cell2.hasClass('blue') && $cell5.hasClass('blue') && $cell8.hasClass('blue')):
-//     alert("WINNER!");
-//       break;  
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// $("td").click(function() {
-//   $(this).removeClass("red").addClass("blue"); 
-// }, function() {
-//      $(this).removeClass("blue").addClass("red");
-// });
-
-
-
-// $('td').click(function() {
-//  // $(this).removeClass();
-//  $(this).addClass('blue')
-// })
-
-// // $('td').dblclick(function() {
-// //   $(this).removeClass();
-// //   $(this).addClass('red')
-// // })
