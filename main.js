@@ -73,7 +73,9 @@ function checkWin() {
       break;
     case ($cell2.hasClass('blue') && $cell5.hasClass('blue') && $cell8.hasClass('blue')):
 	  alert("WINNER!");
-      break;  
+      break;
+    default:
+      alert("It's a draw! Refresh to play again!");
   }
 }
 

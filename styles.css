@@ -10,14 +10,18 @@ table {
 	margin-right: auto;
 }
 
-.red {
+.red, .blue  {
   background: url(http://media.giphy.com/media/12AY0A3PWhI9So/giphy.gif);
-  background-size: 205px 205px;
-}
+  background-size: 150px 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
 
 .blue {
   background: url(http://media.giphy.com/media/MXiwA0L3H1qzm/giphy.gif);
-  background-size: 205px 205px;
+  background-size: 150px 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .blank {
@@ -72,17 +76,17 @@ button {
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 10px;
+	font-size: 1.25em;
 }
 
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#82808a+0,656270+100 */
 html {
-	background: #82808a; /* Old browsers */
-	background: -moz-linear-gradient(top,  #82808a 0%, #656270 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82808a), color-stop(100%,#656270)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #82808a 0%,#656270 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #82808a 0%,#656270 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #82808a 0%,#656270 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #82808a 0%,#656270 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82808a', endColorstr='#656270',GradientType=0 ); /* IE6-9 */
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(76%, rgba(126,188,221,1)), color-stop(100%, rgba(126,188,221,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7ebcdd', GradientType=0 );
 }
