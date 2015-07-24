@@ -66,7 +66,7 @@ span {
     100% { color: #00F; /* to: blue   */ }
 }
 
-header, button
+header, button, #result
 {
     -webkit-animation: colorchange 5s linear 1s infinite alternate;
     animation: colorchange 5s linear 1s infinite alternate;
@@ -89,4 +89,9 @@ html {
 	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(126,188,221,1) 76%, rgba(126,188,221,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7ebcdd', GradientType=0 );
+}
+
+#result {
+	font-weight: bold;
+	font-size: 1.25em;
 }
