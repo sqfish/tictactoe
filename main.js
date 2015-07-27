@@ -43,11 +43,11 @@ function groupingByThree (array) {
 
 
 function checkWin() {  
-  var $columns = $("tbody td");
+  var $state = $.makeArray($("tbody td"));
+  var $columns = groupingByThree($state);
   var $rows = $("tbody tr");
-  var diag = [ [$columns[0], $columns[4], $columns[8]], [$columns[2], $columns[4], $columns[6]] ];
-  $columns = groupingByThree($columns);
-  for(var i = 0; i < 3; i++) {
+  var diag = [ [$state[0], $state[4], $state[8]], [$state[2], $state[4], $state[6]] ];
+    for(var i = 0; i < 3; i++) {
     var $col = $columns[i];
     var $row = $rows[i].children;
     
