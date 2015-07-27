@@ -15,6 +15,7 @@ table {
   background-size: 150px 150px;
   background-position: center center;
   background-repeat: no-repeat;
+  /*background-color: red;*/
   }
 
 .blue {
@@ -22,6 +23,7 @@ table {
   background-size: 150px 150px;
   background-position: center center;
   background-repeat: no-repeat;
+  /*background-color: blue;*/
 }
 
 .blank {
