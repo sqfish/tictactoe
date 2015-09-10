@@ -7,4 +7,8 @@
 * Win checker 
 
 
-##### Contributed with [@taylormiley](https://github.com/taylormiley) and [@sqfish](https://github.com/sqfish) as part of a [@nashville-software-school](https://github.com/nashville-software-school) project.
+##### Contributers
+* Taylor Miley [@taylormiley](https://github.com/taylormiley)
+* Sally Fisher [@sqfish](https://github.com/sqfish)
+* Deric Bunch [@ddbunc2](https://github.com/ddbunc2)
+At [@nashville-software-school](https://github.com/nashville-software-school).
