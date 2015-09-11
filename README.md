@@ -1,5 +1,5 @@
-#NSS Group Project: Tic Tac Toe
-## This is a rendition of the classic game using basic html, css, and jQuery.
+##NSS Group Project: Tic Tac Toe
+### This is a rendition of the classic game using basic html, css, and jQuery.
 
 #### Features
 * Two players
@@ -11,4 +11,5 @@
 * Taylor Miley [@taylormiley](https://github.com/taylormiley)
 * Sally Fisher [@sqfish](https://github.com/sqfish)
 * Deric Bunch [@ddbunc2](https://github.com/ddbunc2)
-At [@nashville-software-school](https://github.com/nashville-software-school).
+
+[@nashville-software-school](https://github.com/nashville-software-school).
